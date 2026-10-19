@@ -33,61 +33,73 @@ E. Skenario pengujian
 | 1 |
 | Klik menu Event di navbar |
 | Tampil daftar 6 event |
+| Sesuai |
 
 
 | 2 |
 | Klik filter "Koor" |
 | Hanya event divisi Koor yang tampil |
+| Sesuai |
 
 
 | 3 |
 | Ketik "bunga" di kolom cari | 
 | Hanya Workshop Merangkai Bunga Altar tampil |
+| Sesuai |
 
 
 | 4 |
 | Cari kata “bxsbx” |
 | Tampil pesan "Event tidak ditemukan." |
+| Sesuai |
 
 
 | 5 |
 | Klik "Lihat Detail" pada sebuah event |
-| Tampil halaman detail event tersebut |
+| Tampil halaman detail event tersebut | 
+| Sesuai |
 
 
 | 6 |
 | Klik "Kembali ke daftar event" |
 | Kembali ke halaman Event |
+| Sesuai |
 
 
 | 7 |
 | Kirim formulir dalam keadaan kosong |
 | Muncul 3 pesan error (nama, email, divisi) |
+| Sesuai |
 
 
 | 8 |
 | Isi email "abc" lalu kirim |
 | Muncul "Format email tidak valid." |
+| Sesuai |
 
 
 | 9 |
 | Isi formulir lengkap dan valid |
 | Pendaftar masuk daftar, tampil pesan berhasil, kuota berkurang |
+| Sesuai |
 
 
 | 10 |
 | Daftar dengan email yang sama dua kali |
 | Muncul "Email ini sudah terdaftar di event ini." |
+| Sesuai |
 
 
 | 11 |
 | Klik Favorit, lalu refresh halaman |
 | Status favorit tetap tersimpan |
+| Sesuai |
 
 
 | 12 |
 | Perkecil layar (lebar < 768px) |
 | Card menjadi 1 kolom, navbar menjadi vertikal |
+| Sesuai |
 
 
 
