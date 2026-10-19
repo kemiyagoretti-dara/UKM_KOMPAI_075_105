@@ -1,2 +1,92 @@
 # UTS_pbw_075_105
+ Portofolio UKM — Komunitas Paingan (React + Vite)
+Proyek UTS Pemrograman Web, Proyek 1: Portofolio Unit Kegiatan Mahasiswa.
+Cara menjalankan
+1. Install Node.js .
+2. Buka terminal di folder proyek, lalu jalankan `npm install`.
+3. Jalankan ‘npm run dev’, lalu buka alamat yang tampil (biasanya http://localhost:5173).
+Halaman
+Beranda, Profil, Event, Detail Event, Kontak (navigasi memakai useState, tanpa backend).
+Fitur bagian Event dan Detail Event
+- Filter event per divisi (Koor, Misdinar, Lektor, Merbung, Umum, Favorit) — useState.
+- Pencarian event berdasarkan nama — event onChange.
+- Tombol Favorit, tersimpan di localStorage — useState + useEffect.
+- Formulir pendaftaran petugas dengan validasi (nama min. 3 karakter, format email, email tidak ganda, divisi wajib).
+- Daftar petugas bisa ditambah dan dihapus, tersimpan di localStorage, dengan batas kuota.
+- Komponen reusable: Card, Navbar, Footer.
+Skenario pengujian
+
+NO
+SKENARIO
+HASIL YANG DIHARAPKAN
+STATUS
+1
+Klik menu Event di navbar
+Tampil daftar 6 event
+
+
+2
+Klik filter "Koor"
+Hanya event divisi Koor yang tampil
+
+
+3
+Ketik "bunga" di kolom cari 
+Hanya Workshop Merangkai Bunga Altar tampil
+
+
+4
+Cari kata “bxsbx”
+Tampil pesan "Event tidak ditemukan."
+
+
+5
+Klik "Lihat Detail" pada sebuah event
+ Tampil halaman detail event tersebut
+
+
+6
+Klik "Kembali ke daftar event"
+Kembali ke halaman Event
+
+
+7
+Kirim formulir dalam keadaan kosong
+Muncul 3 pesan error (nama, email, divisi)
+
+
+8
+Isi email "abc" lalu kirim
+| Muncul "Format email tidak valid."
+
+
+9
+ Isi formulir lengkap dan valid
+Pendaftar masuk daftar, tampil pesan berhasil, kuota berkurang
+
+
+10
+ Daftar dengan email yang sama dua kali
+| Muncul "Email ini sudah terdaftar di event ini."
+
+
+11
+ Klik Favorit, lalu refresh halaman
+ Status favorit tetap tersimpan 
+
+
+12
+Perkecil layar (lebar < 768px)
+Card menjadi 1 kolom, navbar menjadi vertika
+
+
+
+
+
+
+
+
+
+
+
 
