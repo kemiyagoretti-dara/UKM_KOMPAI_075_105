@@ -1,0 +1,539 @@
+/* Mengatur ukuran semua elemen agar lebih mudah diatur */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mengatur tampilan dasar seluruh website */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/*
+  NAVBAR
+*/
+/* Mengatur bagian navigasi */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background-color: #087eae;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Mengatur nama atau logo UKM */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Mengatur posisi menu */
+.menu {
+  display: flex;
+  gap: 8px;
+}
+
+/* Mengatur tombol menu */
+.menu button {
+  border: none;
+  background-color: transparent;
+  padding: 9px 13px;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+/* Memberikan efek ketika menu diarahkan atau aktif */
+.menu button:hover,
+.menu button.aktif {
+  background-color: #ffffff;
+  color: #087eae;
+}
+
+/*
+  BERANDA
+*/
+
+/* Mengatur bagian pembuka halaman */
+.hero {
+  text-align: center;
+  padding: 75px 20px;
+  background: linear-gradient(135deg, #e4f8ff, #ffffff);
+}
+
+/* Mengatur judul utama pada hero */
+.hero h1 {
+  color: #087eae;
+  margin-bottom: 15px;
+  font-size: 38px;
+}
+
+/* Mengatur paragraf pada hero */
+.hero p {
+  max-width: 650px;
+  margin: 0 auto 20px;
+  line-height: 1.7;
+  color: #444444;
+}
+
+/* Mengatur tombol pada hero */
+.hero button {
+  margin: 5px;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #19a9d8;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Memberikan efek saat tombol hero diarahkan */
+.hero button:hover {
+  background-color: #0b83ad;
+}
+
+/*
+  SECTION
+*/
+
+/* Mengatur bagian isi halaman */
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 8%;
+}
+
+/* Mengatur judul utama halaman */
+.section h1 {
+  color: #087eae;
+  margin-bottom: 20px;
+}
+
+/* Mengatur judul bagian */
+.section h2 {
+  color: #087eae;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Mengatur paragraf */
+.section p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/*
+  CARD
+ */
+
+/* Mengatur kumpulan card */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Mengatur tampilan card */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #a8dff2;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 4px 12px rgba(8, 126, 174, 0.08);
+  transition: 0.2s;
+}
+
+/* Memberikan efek ketika card diarahkan */
+.card:hover {
+  border-color: #42b883;
+  transform: translateY(-2px);
+}
+
+/* Mengatur judul card */
+.card h3 {
+  color: #087eae;
+  margin-bottom: 10px;
+}
+
+/* Mengatur teks tanggal */
+.tanggal {
+  color: #0b8fbd;
+  font-weight: bold;
+}
+
+/* Mengatur tombol dalam card */
+.card button {
+  border: none;
+  background-color: #19a9d8;
+  color: #ffffff;
+  padding: 9px 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+/* Memberikan efek ketika tombol card diarahkan */
+.card button:hover {
+  background-color: #087eae;
+}
+
+/*
+  PROFIL
+   */
+
+/* Mengatur kotak visi dan misi */
+.profile-box {
+  background-color: #f2fbff;
+  border-left: 5px solid #19a9d8;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+/* Mengatur judul visi dan misi */
+.profile-box h3 {
+  color: #087eae;
+  margin-bottom: 10px;
+}
+
+/* Mengatur daftar misi */
+.profile-box ul {
+  padding-left: 20px;
+}
+
+/* Mengatur jarak antar daftar */
+.profile-box li {
+  margin-bottom: 8px;
+}
+
+/*
+  FOTO PROFIL
+    */
+
+/* Mengatur tampilan foto profil */
+.foto-profil {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  border: 5px solid #19a9d8;
+}
+
+/*
+  FORM
+    */
+
+/* Mengatur form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  gap: 8px;
+}
+
+/* Mengatur label form */
+.contact-form label {
+  font-weight: bold;
+  color: #087eae;
+  margin-top: 8px;
+}
+
+/* Mengatur input dan textarea */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #a8dff2;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+/* Memberikan efek ketika input dipilih */
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  outline: none;
+  border-color: #19a9d8;
+  box-shadow: 0 0 0 3px rgba(25, 169, 216, 0.12);
+}
+
+/* Mengatur textarea */
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Mengatur tombol form */
+.contact-form button {
+  width: fit-content;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #19a9d8;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Memberikan efek hover pada tombol form */
+.contact-form button:hover {
+  background-color: #087eae;
+}
+
+/* Mengatur pesan hasil form */
+.hasil-form {
+  margin-top: 15px;
+  color: #398a50;
+  font-weight: bold;
+}
+
+/* Mengatur pesan error */
+.error {
+  color: #d9534f;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+/*
+  EVENT
+   */
+
+/* Mengatur input pencarian event */
+.input-cari {
+  width: 100%;
+  max-width: 550px;
+  padding: 12px 15px;
+  margin: 20px 0 15px;
+  border: 1px solid #a8dff2;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+/* Memberikan efek ketika pencarian dipilih */
+.input-cari:focus {
+  outline: none;
+  border-color: #19a9d8;
+  box-shadow: 0 0 0 3px rgba(25, 169, 216, 0.12);
+}
+
+/* Mengatur tempat tombol filter */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+/* Mengatur tombol filter */
+.filter-bar button {
+  padding: 8px 14px;
+  border: 1px solid #8ed8ef;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #087eae;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Memberikan efek hover pada tombol filter */
+.filter-bar button:hover {
+  background-color: #e4f8ff;
+}
+
+/* Mengatur filter yang sedang aktif */
+.filter-bar button.aktif-filter {
+  background-color: #19a9d8;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Mengatur informasi jumlah event */
+.info-hasil {
+  color: #52707c;
+  margin-bottom: 20px;
+}
+
+/* Mengatur pesan ketika event tidak ditemukan */
+.kosong {
+  padding: 20px;
+  background-color: #f1faf4;
+  border: 1px solid #9bd3aa;
+  border-radius: 10px;
+  color: #398a50;
+}
+
+/*
+  DETAIL EVENT
+    */
+
+/* Mengatur label divisi */
+.label-divisi {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 12px;
+  background-color: #e4f8ff;
+  color: #087eae;
+  border: 1px solid #8ed8ef;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Mengatur kotak informasi event */
+.info-box {
+  margin: 25px 0;
+  padding: 20px;
+  background-color: #f2fbff;
+  border-left: 5px solid #19a9d8;
+  border-radius: 10px;
+}
+
+/* Mengatur paragraf dalam kotak informasi */
+.info-box p {
+  margin-bottom: 8px;
+}
+
+/* Mengatur daftar rangkaian kegiatan */
+.rangkaian {
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+
+/* Mengatur setiap item rangkaian kegiatan */
+.rangkaian li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Mengatur tombol kembali */
+.btn-kembali {
+  border: none;
+  background-color: #e4f8ff;
+  color: #087eae;
+  padding: 9px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Memberikan efek pada tombol kembali */
+.btn-kembali:hover {
+  background-color: #19a9d8;
+  color: #ffffff;
+}
+
+/*
+  DAFTAR PENDAFTAR
+   */
+
+/* Mengatur daftar petugas */
+.daftar-pendaftar {
+  list-style: none;
+  max-width: 800px;
+}
+
+/* Mengatur setiap petugas */
+.daftar-pendaftar li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  background-color: #f7fcfe;
+  border: 1px solid #b8e2ef;
+  border-radius: 8px;
+}
+
+/* Mengatur tombol hapus */
+.daftar-pendaftar button {
+  border: none;
+  background-color: #e56b6f;
+  color: #ffffff;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Memberikan efek hover pada tombol hapus */
+.daftar-pendaftar button:hover {
+  background-color: #c94f54;
+}
+
+/*
+  FOOTER
+    */
+
+/* Mengatur bagian footer */
+.footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 30px;
+  background-color: #087eae;
+  color: #ffffff;
+}
+
+/* Mengatur tulisan pada footer */
+.footer p {
+  margin: 5px;
+}
+
+/*
+  RESPONSIVE
+    */
+
+/* Mengatur tampilan pada layar tablet dan HP */
+@media (max-width: 768px) {
+
+  /* Navbar menjadi vertikal */
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 5%;
+  }
+
+  /* Menu dapat turun ke baris berikutnya */
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Card menjadi satu kolom */
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Ukuran judul hero diperkecil */
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  /* Mengurangi jarak bagian halaman */
+  .section {
+    padding: 40px 5%;
+  }
+
+  /* Daftar pendaftar dibuat lebih fleksibel */
+  .daftar-pendaftar li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Tombol hapus menyesuaikan */
+  .daftar-pendaftar button {
+    width: fit-content;
+  }
+}
