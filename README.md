@@ -1,14 +1,17 @@
  # UTS_pbw_075_105
 A. Portofolio UKM — Komunitas Paingan (React + Vite)
    Proyek UTS Pemrograman Web, Proyek 1: Portofolio Unit Kegiatan Mahasiswa.
+   
 B. Cara menjalankan
    1. Install Node.js .
    2. Buka terminal di folder proyek, lalu jalankan `npm install`.
    3. Jalankan ‘npm run dev’, lalu buka alamat yang tampil (biasanya    
       http://localhost:5173).
+      
 C. Halaman
    Beranda, Profil, Event, Detail Event, Kontak (navigasi memakai useState, 
    tanpa backend).
+   
 D. Fitur bagian Event dan Detail Event
    - Filter event per divisi (Koor, Misdinar, Lektor, Merbung, Umum, Favorit) — 
      useState.
@@ -19,6 +22,7 @@ D. Fitur bagian Event dan Detail Event
    - Daftar petugas bisa ditambah dan dihapus, tersimpan di localStorage, dengan 
      batas kuota.
    - Komponen reusable: Card, Navbar, Footer.
+     
 E. Skenario pengujian
 
 | NO |
