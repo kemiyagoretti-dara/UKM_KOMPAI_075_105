@@ -73,6 +73,9 @@ return (
         Jika ingin mengetahui lebih lanjut tentang Komunitas Paingan,
         silakan hubungi kami melalui formulir berikut.
         </p>
+        
+
+
 
 
         {/* Form kontak */}
@@ -138,6 +141,35 @@ return (
         )}
 
     </section>
+
+    <div className="info-kontak">
+  <h3>Informasi Kontak Lainnya</h3>
+
+  <p>
+    Instagram:{" "}
+    <a
+      href="https://www.instagram.com/komunitaspaingan/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      @komunitaspaingan
+    </a>
+  </p>
+
+  <p>
+    Telepon:{" "}
+    <a href="tel:082170893747">
+      0821-7089-3747
+    </a>
+  </p>
+
+  <p>
+    Email:{" "}
+    <a href="mailto:komunitaspaingan@gmail.com">
+      komunitaspaingan@gmail.com
+    </a>
+  </p>
+</div>
 
     </main>
 );
